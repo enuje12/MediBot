@@ -1,8 +1,5 @@
 import streamlit as st
 
-# --------------------------
-# App Title & Design
-# --------------------------
 st.set_page_config(page_title="MediBot - Health Assistant", page_icon="💊", layout="centered")
 
 st.markdown("""
@@ -35,9 +32,8 @@ st.markdown("<div class='title'>💊 MediBot</div>", unsafe_allow_html=True)
 st.markdown("<div class='subtitle'>Your AI-Powered Health Assistant</div>", unsafe_allow_html=True)
 st.write("Select your symptoms below and let MediBot guide you!")
 
-# --------------------------
-# Symptoms Database
-# --------------------------
+# Symptoms 
+
 disease_data = {
     "Fever": {
         "symptoms": ["High temperature", "Chills", "Watery eyes"],
@@ -71,9 +67,9 @@ disease_data = {
     }
 }
 
-# --------------------------
+
 # UI Components
-# --------------------------
+
 selected_symptoms = st.multiselect("Select your symptoms:", 
                                    ["High temperature", "Chills", "Watery eyes", "Runny nose", "Sneezing", "Dry throat", 
                                     "Sore throat", "Pain in forehead", "Tension in neck", "Light sensitivity", 
